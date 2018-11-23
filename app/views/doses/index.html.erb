@@ -4,7 +4,7 @@
 
 <%= link_to "Delete", dose_path(dose),
       method: :delete,
-      data: { confirm: "Are you sure?" } %>
+      data: { confirm: "Are you sure you don't want to drink this?" } %>
 
 <% @doses.each do |dose| %>
   <%= link_to dose.name, dose_path(cocktail) %>
